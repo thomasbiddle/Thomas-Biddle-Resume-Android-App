@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ScrlView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffff" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="horizontal" >
+	    
+	    <ImageView
+	        android:id="@+id/ResumeImage"
+	        android:background="#000000"
+	        android:padding="2dp"
+	        android:layout_marginLeft="7dp"
+	        android:layout_marginTop="7dp"
+	        android:layout_width="93dp"
+	        android:layout_height="134dp"
+	        android:src="@drawable/avatar" />
+
+	    
+
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="#ffffff"
+			    android:orientation="vertical" > 
+		    
+			   <TextView 
+			       android:id="@+id/ResumeName"
+			       android:paddingLeft="10dp"
+			       android:paddingTop="15dp"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:textColor="#000000"
+			       android:text="Thomas Biddle" />	
+			  <TextView 
+			       android:id="@+id/ResumeTitle"
+			       android:paddingLeft="10dp"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:textColor="#000000"
+			       android:text="Software Developer" />	
+			  <TextView 
+			       android:id="@+id/ResumeMajor"
+			       android:paddingLeft="10dp"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:textColor="#000000"
+			       android:text="Computer Science Major" />    
+			  <TextView 
+			       android:id="@+id/ResumeDesc"
+			       android:paddingLeft="10dp"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:textColor="#000000"
+			       android:textSize="9dp"
+			       android:text="Psst.. Hire me!" /> 
+			  <TextView 
+			       android:id="@+id/ResumeWebsite"
+			       android:clickable="true"
+			       android:onClick="show_Website"
+			       android:paddingLeft="10dp"
+			       android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+			       android:textColor="#0000FF"
+			       android:paddingTop="2dp"
+			       android:textSize="11dp"
+			       android:text="www.ThomasBiddle.com" /> 
+			       
+			       
+			  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="25dp"
+				    android:paddingTop="3dp"
+				    android:background="#ffffff"
+				    android:orientation="horizontal" >
+<!-- Not sure where else to give credit for this; but for those looking at the source the icons below were found at: http://www.iconspedia.com/pack/social-media-2347/ -->				    
+			      <ImageView
+			        android:id="@+id/FacebookLogo"
+			        android:clickable="true"
+			        android:onClick="show_Facebook"
+			        android:layout_margin="3dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/fbook" />
+			      <ImageView
+			        android:id="@+id/TwitterLogo"
+			        android:clickable="true"
+			        android:onClick="show_Twitter"
+			        android:layout_margin="3dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/twitter" />
+			      <ImageView
+			        android:id="@+id/LinkedInLogo"
+			        android:clickable="true"
+			        android:onClick="show_LinkedIn"
+			        android:layout_margin="3dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/linkedin" />
+			  </LinearLayout>	    
+		 </LinearLayout>  
+		       
+	</LinearLayout>
+	<Button
+	        android:id="@+id/but_About"
+	        android:onClick="show_About"
+	        style="@style/ButtonTextTop"
+	        android:background="@drawable/btn_white_states"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:width="175dp" 
+	        android:text="About Me" />
+	<TextView 
+	       android:id="@+id/text_About"
+	       android:paddingLeft="7dp"
+	       android:paddingRight="7dp"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:textColor="#000000"
+	       android:visibility="gone"
+	       android:text="Computer Science &amp; Software Development:\n\n
+\tI am currently a student at the University of Cincinnati working towards my BS in Computer Science. Software development is one of my greatest interests, and I always strive to not only increase my knowledge and experience in the field; but find new ways to apply it. \n\n
+Independent Ventures:\n\n
+\tIn 2011 I was able to successfully found two web hosting companies centered around Virtual Private Servers. Between the two companies, I catered to over 500 individual monthly customers and held a reputation for outstanding customers service and going the extra mile in order to make sure my services were the best available.\n\n
+Specialties: Java, C++, Javascript, Linux, Android" />  
+	<Button
+	        android:id="@+id/but_WorkHistory"
+	        android:onClick="show_WorkHistory"
+	        style="@style/ButtonText"
+	        android:background="@drawable/btn_white_states"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:width="175dp"
+	        android:text="Work History" /> 
+	<TextView 
+	       android:id="@+id/text_WorkHistory"
+	       android:paddingLeft="7dp"
+	       android:paddingRight="7dp"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:textColor="#000000"
+	       android:visibility="gone"
+	       android:text="
+	       Seapine Software\n
+	       Software Development Co-op\n
+	       January 2012 - Present\n\n
+	       MinecraftLayer.com\n
+	       Co-Founder\n
+	       September 2011 - December 2011\n\n
+	       VPSInfinity.com\n
+	       Founder\n
+	       February 2011 - December 2011\n\n
+	       Boulder Landscaping\n
+	       Division Manager\n
+	       January 2008 - June 2011\n\n
+	       Cold Stone Creamery\n
+	       Server\n
+	       November 2007 - April 2009" />
+	<Button
+	        android:id="@+id/but_Education"
+	        android:onClick="show_Education"
+	        style="@style/ButtonText"
+	        android:background="@drawable/btn_white_states"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:width="175dp"
+	        android:text="Education" />  
+	<TextView 
+	       android:id="@+id/text_Education"
+	       android:paddingLeft="7dp"
+	       android:paddingRight="7dp"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:textColor="#000000"
+	       android:visibility="gone"
+	       android:text="
+	       University of Cincinnati\n
+	       BS, Computer Science\n
+	       2010-2015 (expected)\n
+	       GPA: 3.4\n\n
+	       Sycamore High School\n
+	       2006-2010\n
+	       GPA: 3.4" />
+	<Button
+	        android:id="@+id/but_Portfolio"
+	        android:onClick="show_Portfolio"
+	        style="@style/ButtonText"
+	        android:background="@drawable/btn_white_states"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:width="175dp"
+	        android:text="Portfolio" /> 
+	<TextView 
+	       android:id="@+id/text_Portfolio"
+	       android:paddingLeft="7dp"
+	       android:paddingRight="7dp"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:textColor="#000000"
+	       android:visibility="gone"
+	       android:text="\tAs my experience in Computer Science and programming continues to grow, I will be adding as much to my portfolio as possible. As a supporter of open source communities, I plan to release the source code for any personal projects I take on. The majority, if not all, of my independent projects can be found at: \nhttp://www.ThomasBiddle.com/#work\n\n
+\tAt the above address, you will find a collection of my independent projects, such as 'Project Euler' problems, as well as Android Applications. I also have a few small school assignments that I found to be interesting." />
+	<Button
+	        android:id="@+id/but_Recommendations"
+	        android:onClick="show_Recommendations"
+	        style="@style/ButtonText"
+	        android:background="@drawable/btn_white_states"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:width="175dp"
+	        android:text="Recommendations" />
+	<TextView 
+	       android:id="@+id/text_Recommendations"
+	       android:paddingLeft="7dp"
+	       android:paddingRight="7dp"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:textColor="#000000"
+	       android:visibility="gone"
+	       android:text="Samual Stine, Web Engineer &amp; Founder, SeerVirtual, LLC.\n\nZach LaGreca, Jr Web Designer, Vezign, LLC.\n\n\tIf you would like to speak with either of these individuals, or would like a letter of recommendation from another, please do not hesitate to contact me." />
+
+</LinearLayout>
+</ScrollView>
